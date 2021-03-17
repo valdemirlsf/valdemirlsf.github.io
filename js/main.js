@@ -1,8 +1,5 @@
 var conteudo = document.getElementById("informacoes");
 var paragrafo = document.createElement("h2");
-
-paragrafo.innerHTML = "Meu nome não é Johnny";
-conteudo.appendChild(paragrafo);
 var botao = document.createElement("button");
 var contador = 0;
 
@@ -12,6 +9,7 @@ var tabom = document.getElementById("rel");
 tabom.style.display = 'none';
 function apresentartabom(){
     tabom.style.display = 'block';
+    tabom.style.animation = 'aparecer 1s linear';
     tabom.innerHTML = "Tá bom! Quer mais o quê?";
     botao.disabled = true;
 }
@@ -70,7 +68,7 @@ function creardivs(){
         }
 
     }
-    var gerados = document.getElementById("parte2");
+    var gerados1 = document.getElementById("cliqueaqui");
     botao.innerHTML = "Clique Aqui!";
     botao.setAttribute('onclick', 'apresentartabom()');
     botao.setAttribute("id", "botao");
@@ -132,14 +130,19 @@ function besteira(){
 }
 function closeaba(){
         
-        document.getElementById("gerados").style.display = 'none';
+        document.getElementById("gerados").style.animation = 'sumir 1s linear';
+        setTimeout(function(){
+            document.getElementById("gerados").style.display = 'none';
+        }, 1000);
         tabom.innerHTML = ' ';
         tabom.style.display = 'none';
         botao.disabled = true;
         LimparNome();
 
 }
-
+function defineanima(){
+    document.getElementById('pe').style.animation = 'sumir 1s linear';
+}
 
 /*
 70:FD:46:B6:45:02 papai
