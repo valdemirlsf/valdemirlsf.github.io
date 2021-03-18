@@ -69,7 +69,7 @@ function creardivs(){
 
     }
     var gerados1 = document.getElementById("cliqueaqui");
-    botao.innerHTML = "Clique Aqui!";
+    botao.innerHTML = "Não Clique!";
     botao.setAttribute('onclick', 'apresentartabom()');
     botao.setAttribute("id", "botao");
     gerados.appendChild(botao);
@@ -130,19 +130,17 @@ function besteira(){
 }
 function closeaba(){
         
-        document.getElementById("gerados").style.animation = 'sumir 1s linear';
+        document.getElementById("gerados").style.animation = 'sumir 0.5s linear';
         setTimeout(function(){
             document.getElementById("gerados").style.display = 'none';
-        }, 1000);
+        }, 500);
         tabom.innerHTML = ' ';
         tabom.style.display = 'none';
         botao.disabled = true;
         LimparNome();
 
 }
-function defineanima(){
-    document.getElementById('pe').style.animation = 'sumir 1s linear';
-}
+
 
 /*
 70:FD:46:B6:45:02 papai
