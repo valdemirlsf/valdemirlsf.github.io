@@ -83,11 +83,13 @@ function desenharNome(){
     //for(i=0;i<mapadesenho.length;i++){
         
         
+        if(contquadrado < mapadesenho.length){
+            var des = document.getElementById('mapa'+mapadesenho[contquadrado]);
+            des.style.backgroundColor = 'lime';
+            des.setAttribute("onmouseover", "trocaCor(this)");
+            contquadrado++;
+        }
         
-        var des = document.getElementById('mapa'+mapadesenho[contquadrado]);
-        des.style.backgroundColor = 'lime';
-        des.setAttribute("onmouseover", "trocaCor(this)");
-        contquadrado++;
         if(contquadrado == 50){
             botao.disabled = false;
         }
@@ -120,7 +122,7 @@ function besteira(){
     var intervalo = setInterval(desenharNome, 50);
     setTimeout(function() {
         clearInterval(intervalo);
-    }, 2500);
+    }, 3000);
     
         
        
