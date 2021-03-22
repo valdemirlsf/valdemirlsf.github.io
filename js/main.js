@@ -10,7 +10,7 @@ tabom.style.display = 'none';
 function apresentartabom(){
     tabom.style.display = 'block';
     tabom.style.animation = 'aparecer 1s linear';
-    tabom.innerHTML = "Tá bom! Quer mais o quê?";
+    tabom.innerHTML = "Fim da Linha, não chore!";
     botao.disabled = true;
 }
 function noses(){
