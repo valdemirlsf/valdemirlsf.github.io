@@ -257,10 +257,21 @@ h3{
     
 }
 .quadrado{
-    height: 10ex;
+    height: 9ex;
     width: 10ex;
 }
-  
+#on p{
+    color:#FF6600;
+    animation: mudacor 2s infinite;
+}
+  @keyframes mudacor{
+    0%{color: lime;}
+    20%{color:blue}
+    40%{color: yellow;}
+    60%{color:rgb(255, 166, 1)}
+    80%{color: #FF6600;}
+    100%{color: lime;}
+  }
   @keyframes slidein {
     from {
       margin-right: 100%;
