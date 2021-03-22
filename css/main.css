@@ -326,7 +326,7 @@ h3{
     0%{opacity: 1;}
     100%{opacity: 0;}
 }
-@media(max-width: 650px){
+@media(max-width: 850px){
     
     body{
         font-size: .8rem;
@@ -406,4 +406,8 @@ h3{
     }
     .quadrado{
         height: 5ex;
+    }
+    .footer{
+        opacity: 1;
+        animation: none;
     }
