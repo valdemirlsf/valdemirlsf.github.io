@@ -329,7 +329,7 @@ h3{
 @media(max-width: 650px){
     
     body{
-        font-size: .5rem;
+        font-size: .8rem;
         margin: 0px;
         margin-bottom: 30%;
     }
@@ -348,7 +348,7 @@ h3{
     }
     .item{
         text-align: center;
-        font-size: 50%;
+        font-size: 60%;
         border: none;
         padding: .7em;
     }
@@ -386,17 +386,17 @@ h3{
     }
     #meunome{
         width: 80%;
-        font-size: .7rem;
+        font-size: 1rem;
     }
     h2{
         width: 50%;
         font-size: .6rem;
     }
     #resumo{
-        font-size: .5rem;
+        font-size: .8rem;
     }
     #listacursos li{
-        font-size: .45rem;
+        font-size: .7rem;
     }
     #botao{
         width: 40%;
