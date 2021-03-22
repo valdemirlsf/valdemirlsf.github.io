@@ -18,8 +18,8 @@ function noses(){
         var quadrado = document.createElement("div");
         contador++;
         quadrado.style.backgroundColor = 'red';
-        quadrado.style.width = "50px";
-        quadrado.style.height = '50px';
+        quadrado.style.width = "5em";
+        quadrado.style.height = '5em';
         quadrado.style.margin = "1px";
         quadrado.setAttribute("id", "quad"+contador);
         quadrado.setAttribute("class", "quad");
@@ -57,13 +57,10 @@ function creardivs(){
         for(i=0;i<19;i++){
             var quad = document.createElement("div");
             //quad.style.backgroundColor = 'green';
-            quad.style.width = '52px';
-            quad.style.height = '52px';
             quad.style.margin = '1px';
             quad.setAttribute("class", "quadrado");
             quad.setAttribute("id", "mapa"+i+""+j);
             //quad.innerHTML = i+""+j;
-            quad.style.textAlign = 'center';
             coluna.appendChild(quad);
         }
 
@@ -72,10 +69,11 @@ function creardivs(){
     botao.innerHTML = "Não Clique!";
     botao.setAttribute('onclick', 'apresentartabom()');
     botao.setAttribute("id", "botao");
-    gerados.appendChild(botao);
+    document.getElementById("on").appendChild(botao);
     
 
 }
+
 var mapadesenho = ['00', '01' ,'02', '03', '04', '14', '24','40','41','42','43','44', '54','64','63','62','61','60','80','90', '100', '81', '82', '83', '84', '94', '104', '124', '123', '122', '121', '120', '130', '140', '141', '142', '132', '143', '144', '180', '170', '160', '161', '162', '172', '182', '183', '184', '174', '164'];
 var contquadrado = 0;
 botao.disabled = true;
@@ -85,7 +83,7 @@ function desenharNome(){
         
         if(contquadrado < mapadesenho.length){
             var des = document.getElementById('mapa'+mapadesenho[contquadrado]);
-            des.style.backgroundColor = 'lime';
+            des.style.backgroundColor = '#FF6600';
             des.setAttribute("onmouseover", "trocaCor(this)");
             contquadrado++;
         }
@@ -108,7 +106,7 @@ function LimparNome(){
         
         for(i=0;i<mapadesenho.length;i++){
             var des = document.getElementById('mapa'+mapadesenho[i]);
-            des.style.backgroundColor = 'lemonchiffon';
+            des.style.backgroundColor = 'rgb(27,27,27)';
             
         }
             
@@ -117,7 +115,8 @@ function LimparNome(){
 }
 creardivs();
 function besteira(){
-    document.getElementById("gerados").style.display = 'block';
+    
+    document.getElementById("gerados").style.display = 'flex';
     document.getElementById("gerados").style.animation = 'aparecer 1s linear';
     var intervalo = setInterval(desenharNome, 50);
     setTimeout(function() {
