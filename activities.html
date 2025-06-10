@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atividades</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Press Start 2P' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet'>
+    <link rel="stylesheet" href="css/activities.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="icons/107127.png">
+</head>
+
+<body>
+    <div class="content">
+        <div class="navbar">
+            <button id="botaoVoltar" onclick="history.back()"> <span class="setaVoltar"><</span> </button>
+            <h1>Minha Jornada</h1>
+            <button id="preencher"></button>
+        </div>
+
+        <div id="timelineContainer">
+            <button id="botaoVoltarTimeline" class="scroll-btn left hidden" onclick="scrollContainer(-180)" ondblclick="scrollContainer(-180)" ><</button>
+            <div id="scrolable">
+                <div class="timeline" id="timeline">
+                    <div class="item">
+                        <div class="int">
+                            <div class="point">
+                            </div>
+                            <div class="txt">
+                                <span class="time">2016</span>
+                                <p>
+                                    Programming for the future <br> Accenture.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="int">
+                            <div class="point">
+                            </div>
+                            <div class="txt">
+                                <span class="time">2018</span>
+                                <p>
+                                    Curso técnico em informática para internet. <br> (IFPE - jaboatão)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="int">
+                            <div class="point">
+                            </div>
+                            <div class="txt">
+                                <span class="time">2019</span>
+                                <p>
+                                    Estágio em robótica <br> (CETEC)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="int">
+                            <div class="point">
+                            </div>
+                            <div class="txt">
+                                <span class="time">2020</span>
+                                <p>
+                                    Análise e Desenvolvimento de Sistemas <br> (IFPE - jaboatão)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="int">
+                            <div class="point">
+                            </div>
+                            <div class="txt">
+                                <span class="time">2021</span>
+                                <p>
+                                    Desenvolvimento Web <br> (Wipro)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="scroll-btn right" onclick="scrollContainer(180)" ondblclick="scrollContainer(180)">></button>
+
+        </div>
+
+
+        <div class="terminal">
+            <span class="fonteTerminal">asdasd</span>
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript" src="js/activities.js"></script>
+</body>
+
+</html>

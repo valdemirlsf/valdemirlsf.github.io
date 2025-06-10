@@ -1,188 +1,278 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <title>Valdemir Lucas</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="icon" href="icons/107127.png">
-    </head>
-    <body>
-        
 
-            <nav class="menu">
-            
-                <a href="">
-                    
-                     <h4 href="inicio.html" class='item'>
-                         &#x1F3AA;Início&#x1F3AA;
-                     </h4>
-                </a>
-                <a href="#formacao">
-                    <h4  class='item'>
-                        &#x1F393;Formação&#x1F393;
+<head>
+    <meta charset="utf-8">
+    <title>Valdemir Lucas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Press Start 2P' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet'>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="icons/107127.png">
+</head>
+
+<body class="">
+    <div class="conteudo">
+        <nav id="menu" class="menu">
+            <div>
+                <a id="primeiroLink">
+                    <h4 class='item title primeiroLink'>
+                        Valdemir <span class="iconeFechar">I</span>
                     </h4>
                 </a>
-                <a href="#atvs">
-                     <h4 class='item'>
-                         &#x1F680;Atividades&#x1F680;
-                     </h4>
-                 </a> 
-                 <a href="#gerados" onclick="besteira()">
-                     <h4 class='item'>
-                         &#x1F9D9;Magia&#x1F9D9;
-                     </h4>
-                 </a>
-             
-            </nav>
-            <div id="conteudo">
-                <div id="avatar">
-                    <img src="css/fotovaldemir.jpg" id="foto">
-                    <h1 id="meunome">Valdemir Lucas da Silva Filho</h1>
-                </div>
-                
-                <div id="informacoes">
-                    <h2>Resumo</h2>
-                    <p id="resumo">
-                        &#x1F496; <script type="text/javascript" src="js/data.js"></script> anos, brasileiro, Recifense.
-                        Nordestino "sim sinhô".&#x1F496;<br><br>
-                        Meu foco atualmente é na área de programação para web, mas, sonho em futuramente trabalhar com inteligência artificial e análise de dados.
-                    </p>
-                    <h2 id="formacao">Formação</h2>
-                    <ul id="listacursos">
-                        <li>
-                            <h3>&#x1F3B2;&nbsp;Ensino Médio - <small class="ensino">Ginásio Pernambucano, conclusão - 2012</small></h3>
-                        </li>
-                        <li>
-                            <h3>&#x1F3B2;&nbsp;Formado como técnico de informática para internet(2019) - <small class="ensino">(IFPE, campus jaboatão)</small></h3>
-                        </li>
-                        <li>
-                            <h3>&#x1F3B2;&nbsp;Estudante de Análise e desenvolvimento de sistemas <small class="ensino">(IFPE, campus jaboatão)</small></h3>
-                        </li>
-                    </ul>
-                    <h2>Tecnologias </h2>
-                    <ul id="listatech">
-                        <li>
-                            <h3>&#x1F3B2;&nbsp;Front-End</h3>
-                            <ul>
-                                <li><h4>&#x1F538;HTML</h4></li>
-                                <li><h4>&#x1F538;CSS</h4></li>
-                                <li><h4>&#x1F538;Javascript</h4></li>
-                                <li><h4>&#x1F538;Bootstrap</h4></li>
-                                <li><h4>&#x1F538;JQuery</h4></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <h3>&#x1F3B2;&nbsp;Back-End</h3>
-                            <ul>
-                                <li><h4>&#x1F538;Java <small>(JEE, POO)</small></h4></li>
-                                <li><h4>&#x1F538;PHP</h4></li>
-                                <li><h4>&#x1F538;Python</h4></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <h3>&#x1F3B2;&nbsp;Banco de Dados</h3>
-                            <ul>
-                                <li><h4>&#x1F538;MYSQL</h4></li>
-                                <li><h4>&#x1F538;MariaDb</h4></li>
-
-                            </ul>
-                        </li>
-                        <li>
-                            <h3>&#x1F3B2;&nbsp;Sistemas Operacionais</h3>
-                            <ul>
-                                <li><h4>&#x1F538;Windows</h4></li>
-                                <li><h4>&#x1F538;Linux</h4></li>
-                                
-                            </ul>
-                        </li>
-                    </ul>
-                    <h2 id="atvs">
+            </div>
+            <div class="menu-item">
+                <a href="">
+                    <h4 href="inicio.html" class='item title'>
+                        Início
+                    </h4>
+                </a>
+                <a href="#formacao">
+                    <h4 class='item title'>
+                        Formação
+                    </h4>
+                </a>
+                <a href="activities.html">
+                    <h4 class='item title'>
                         Atividades
-                    </h2>
-                    <div id="experiencias">
-                
-                        <div id="robotica" class="exp">
-                            
-                            <img src="css/fotonaahs.jpeg" alt="Foto com meus alunos de robótica" id="fotomeninos">
-                            <p id="probotica">&#x1F538; Estágio em robótica pelo CETEC. <br>Preparando crianças do ensino fundamental para a OBR <small>(Olimpíada Brasileira de Robótica)</small>.
-                            <br>
-                            <small>Fev - Jul (2019)</small>
+                    </h4>
+                </a>
+            </div>
+        </nav>
+        <div id="conteudo">
+            <div id="avatar">
+                <div class="imagemAvatar">
+                    <img src="css/fotovaldemir.jpg" onclick="mudarFoto(this)" id="foto">
+                    <!--<img src="css/fotovaldemir2.png" id="fotoBack">-->
+                </div>
+
+                <div>
+                    <h1 id="meunome" class="title" data-target-resolver>Olá, eu sou </br> Valdemir</h1>
+                    <h3 id="presentation">DESENVOLVEDOR - WEB - MOBILE</h3>
+                </div>
+
+            </div>
+            <div id="sectInfo">
+
+                <div id="resumo">
+                    <div>
+                        <h1>SOBRE MIM</h1>
+                        <p id="informacoes">
+                            <span class="fonteTerminal">PS C:/></span>
+                            <span id="textoResumo" style="display: none;">
+                                <script type="text/javascript" src="js/data.js"></script> anos. Nordestino. Dev. <br>
+                                Adoro
+                                tranformar idéias em código. <br> Meu foco atualmente é desenvolvimento mobile com
+                                flutter e
+                                kotlin, embora boa parte da minha jornada tenha sido na programação para web e WebApi,
+                                me permitindo ser flexível e buscar novos desafios
+                            </span><span class="cursor">|</span>
+
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="projects">
+                            <div class="text-center">
+                                <span class="title">Skills Recentes</span>
+                            </div>
+                            <p class="">
+                                <span class="fonteTerminal">PS C:/></span> SKILLS UPDATING..<span
+                                    class="cursor">.</span>
+                            </p>
+                            <p class="progress">
+                                1. KOTLIN ......... [███<span class="progressIndicator">█</span>____] 57%
+                            </p>
+                            <p class="progress">
+                                2. FLUTTER ........ [██<span class="progressIndicator1">█</span>______] 40%
+                            </p>
+                            <p class="progress">
+                                3. .NET C# ........ [███<span class="progressIndicator">█</span>____] 56%
                             </p>
                         </div>
-                        <div class="monitorias exp" >
-                            <h3 id="tmonitorias">Monitorias</h3>
-                            <p> &#x1F536; Monitor em Lógica de programação <br><small>Utilizando tecnologias Javascript e Scratch</small>.
-                            <br>
-                            <small> (2018)</small>
-                            </p>
-                            <p> &#x1F536; Monitor em Desenvolvimento Web<br><small>Utilizando tecnologias HTML, CSS e Javascript</small>.
-                                <br>
-                                <small> (2019)</small>
-                            </p>
-                            <p>Local: Instituto Federal de Pernambuco</p>
-                        </div>
-                        <div class="monitorias exp">
-                            <h3 id="tcursos">Curso complementar</h3>
-                            <p> &#x1F536; Programa Programming For The Future <br><small>Utilizando tecnologia ABAP</small>.
-                            <br>
-                            <small> (2016)</small>
-                            </p>
-                            <p>Empresa Accenture</p>
-                        </div>
-                        
                     </div>
-                    
-                    
 
                 </div>
-                
-                
-                
-                <div id="gerados">
-                    <div><a href="#gerados" id="botbesteira" onclick="closeaba()">X</a></div>
-                    <br>
-                    <div id="L1">
 
-                    </div>
-                    <div id="L2">
-
-                    </div>
-                    <div id="L3">
-
-                    </div>
-                    <div id="L4">
-
-                    </div>
-                    <div id="L5">
-
-                    </div>
-                    <div id="on">
-                        <p><strong>Pequena animação criada com CSS e Javascript</strong> </p>
-                    </div>
-                </div>
-                <div id="parte2">
-                    
-                    <h1 id="rel"></h1>
-                </div>
-                
             </div>
 
-        
-        
+            <div id="informacoes" style="display: none;">
+                <h2 class="title">Resumo</h2>
+                <p id="resumo">
+                    &#x1F496;
+                    <script type="text/javascript" src="js/data.js"></script> anos, brasileiro, Recifense.
+                    Nordestino "sim sinhô".&#x1F496;<br><br>
+                    Meu foco atualmente é na área de programação para web, mas, sonho em futuramente trabalhar com
+                    inteligência artificial e análise de dados.
+                </p>
+                <h2 id="formacao">Formação</h2>
+                <ul id="listacursos">
+                    <li>
+                        <h3>&#x1F3B2;&nbsp;Ensino Médio - <small class="ensino">Ginásio Pernambucano, conclusão -
+                                2012</small></h3>
+                    </li>
+                    <li>
+                        <h3>&#x1F3B2;&nbsp;Formado como técnico de informática para internet(2019) - <small
+                                class="ensino">(IFPE, campus jaboatão)</small></h3>
+                    </li>
+                    <li>
+                        <h3>&#x1F3B2;&nbsp;Estudante de Análise e desenvolvimento de sistemas <small
+                                class="ensino">(IFPE,
+                                campus jaboatão)</small></h3>
+                    </li>
+                </ul>
+                <h2>Tecnologias </h2>
+                <ul id="listatech">
+                    <li>
+                        <h3>&#x1F3B2;&nbsp;Front-End</h3>
+                        <ul>
+                            <li>
+                                <h4>&#x1F538;HTML</h4>
+                            </li>
+                            <li>
+                                <h4>&#x1F538;CSS</h4>
+                            </li>
+                            <li>
+                                <h4>&#x1F538;Javascript</h4>
+                            </li>
+                            <li>
+                                <h4>&#x1F538;Bootstrap</h4>
+                            </li>
+                            <li>
+                                <h4>&#x1F538;JQuery</h4>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>&#x1F3B2;&nbsp;Back-End</h3>
+                        <ul>
+                            <li>
+                                <h4>&#x1F538;Java <small>(JEE, POO)</small></h4>
+                            </li>
+                            <li>
+                                <h4>&#x1F538;PHP</h4>
+                            </li>
+                            <li>
+                                <h4>&#x1F538;Python</h4>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>&#x1F3B2;&nbsp;Banco de Dados</h3>
+                        <ul>
+                            <li>
+                                <h4>&#x1F538;MYSQL</h4>
+                            </li>
+                            <li>
+                                <h4>&#x1F538;MariaDb</h4>
+                            </li>
 
-        <div class="footer" id="pe">
-            <p>
-                <h4>Contato:</h4>
-                <a href="mailto:valdemirlsf@gmail.com">Email: valdemirlsf@gmail.com</a> &nbsp;
-                <a style="border-left: 2px solid lemonchiffon;" href="tel:+5581995394296"> &nbsp; &nbsp;Telefone: +55 (81) 995394296</a>
-                <br>&copy; <small>Valdemir Lucas</small> 
-            </p>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>&#x1F3B2;&nbsp;Sistemas Operacionais</h3>
+                        <ul>
+                            <li>
+                                <h4>&#x1F538;Windows</h4>
+                            </li>
+                            <li>
+                                <h4>&#x1F538;Linux</h4>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+                <h2 id="atvs">
+                    Atividades
+                </h2>
+                <div id="experiencias">
+
+                    <div id="robotica" class="exp">
+
+                        <img src="css/fotonaahs.jpeg" alt="Foto com meus alunos de robótica" id="fotomeninos">
+                        <p id="probotica">&#x1F538; Estágio em robótica pelo CETEC. <br>Preparando crianças do ensino
+                            fundamental para a OBR <small>(Olimpíada Brasileira de Robótica)</small>.
+                            <br>
+                            <small>Fev - Jul (2019)</small>
+                        </p>
+                    </div>
+                    <div class="monitorias exp">
+                        <h3 id="tmonitorias">Monitorias</h3>
+                        <p> &#x1F536; Monitor em Lógica de programação <br><small>Utilizando tecnologias Javascript e
+                                Scratch</small>.
+                            <br>
+                            <small> (2018)</small>
+                        </p>
+                        <p> &#x1F536; Monitor em Desenvolvimento Web<br><small>Utilizando tecnologias HTML, CSS e
+                                Javascript</small>.
+                            <br>
+                            <small> (2019)</small>
+                        </p>
+                        <p>Local: Instituto Federal de Pernambuco</p>
+                    </div>
+                    <div class="monitorias exp">
+                        <h3 id="tcursos">Curso complementar</h3>
+                        <p> &#x1F536; Programa Programming For The Future <br><small>Utilizando tecnologia ABAP</small>.
+                            <br>
+                            <small> (2016)</small>
+                        </p>
+                        <p>Empresa Accenture</p>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
 
         </div>
-        
-        
-        <script type="text/javascript" src="js/main.js"></script>
-        
-    </body>
+
+
+
+
+        <div class="footer" id="pe">
+            <div class="contato">
+                <h4>Contato:</h4>
+                <h4><a onclick="abrirModal(1)">> EMAIL</a></h4>
+                <h4><a onclick="abrirModal(2)">> TELEFONE</a></h4>
+            </div>
+            <p class="copy"> &copy; <small>Valdemir Lucas</small> </p>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-border">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal-body">
+                    <h1 id="tituloModal"></h1>
+                    <p id="contato"></p>
+                    <a href="" class="whatsapp-button" id="link" target="_blank"><span id="textoLink"></span></a>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/typingEffect.js"></script>
+
+
+</body>
+
 </html>
